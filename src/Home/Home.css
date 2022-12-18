@@ -24,22 +24,22 @@ html {
 
 .name-title {
     font-size: 70px;
-    overflow: hidden;
+    display: block;
     white-space: nowrap;
     width: 18ch;
-    animation: typing 1.5s steps(18), blink .5s step-end infinite alternate;
-    border-right: 2px solid;
+    border-right: 4px solid;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(18),
+        blink 0.5s infinite step-end alternate;
 }
 
 @keyframes typing {
     from {width: 0}
-    to {width: 18ch}
 }
 
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+    50% {border-color: transparent}
 }
 
 .subtitle {
