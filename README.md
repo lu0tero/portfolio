@@ -2,6 +2,8 @@
 
 Hola! Hace varios días que vengo trabajando en la creación de mi portfolio. Este mismo esta orientado a un estilo retro. También para que conozcan un poco de mi y la manera en la que yo trabajo. Gracias por ver ♥
 
+## Deploy
+https://my-portfolio-sigma-opal-48.vercel.app/
 
 ## Iniciación
 Para visualizar el proyecto es requerido escribir en la consola:
