@@ -96,9 +96,9 @@ const Home = () => {
               {
                 skills.map((oneSkill, idx) => {
                   return (
-                    <div data-aos='fade-up' data-aos-duration='2500' className='skill-card-container'>
+                    <div data-aos='fade-up' data-aos-duration='2500' className='skill-card-container' key={idx}>
                         <div className='skill-card'> 
-                          <img key={idx} className='skill-img' src={oneSkill.skill} alt="skill" />
+                          <img className='skill-img' src={oneSkill.skill} alt="skill" />
                           <span className='skill-name'>{oneSkill.name}</span>
                         </div>
                     </div>
@@ -117,8 +117,8 @@ const Home = () => {
           {
             data.map((project, idx) => {
               return(
-                <a className='project-link' target='_blank' href={project.link}>
-                  <div data-aos='fade-up' data-aos-duration='3000' className='project-card' key={idx}>
+                <a key={idx} className='project-link' target='_blank' href={project.link}>
+                  <div data-aos='fade-up' data-aos-duration='3000' className='project-card' >
                     <img className='project-img' src={project.img} alt="project-img" />
                     <div className='project-info'>
                       <h3 className='project-title'>{project.title}</h3>

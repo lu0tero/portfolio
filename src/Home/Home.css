@@ -31,7 +31,7 @@ html {
     overflow: hidden;
     animation: 
         typing 2s steps(18),
-        blink 0.5s infinite step-end alternate;
+        blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
