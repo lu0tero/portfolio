@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap'); /* Nunito Sans */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundColor: #030712;
+    --secondColor: whitesmoke;
+    --thirdColor: #A703AD;
+    --yellow: rgb(255, 208, 0);
+
+}
+
+body {
+    font-family: 'VT323', monospace;
+}

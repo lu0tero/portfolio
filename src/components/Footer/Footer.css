@@ -1,0 +1,45 @@
+footer {
+    background-image: url('../../assets/img/svg/yellowave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    height: 300px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 25px;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-footer {
+    color: black;
+}
+
+.copyright {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+}

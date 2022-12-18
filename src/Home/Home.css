@@ -1,0 +1,599 @@
+html {
+    scroll-behavior: smooth;
+    background-color: var(--backgroundColor);
+}
+
+/* Introduction */
+
+.introduction-container {
+    background-image: url('../assets/img/marioEdit.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+    backdrop-filter: 200px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.name-title {
+    font-size: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 18ch;
+    animation: typing 1.5s steps(18), blink .5s step-end infinite alternate;
+    border-right: 2px solid;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 18ch}
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+.project-btn {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 208, 0);
+    box-shadow: 0 5px rgb(34, 34, 34);
+    padding: 10px;
+    position: relative;
+    top: 50px;
+}
+
+.project-btn:active {
+      box-shadow: 0 2px rgb(27, 27, 27);
+      transform: translateY(4px);
+
+}
+
+.arrow-img {
+    width: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-btn:hover {
+    cursor: pointer;
+}
+
+/* Project Section */
+
+
+.project-img {
+    filter: grayscale();
+}
+
+.project-img:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.about-projects {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    background-color:  var(--backgroundColor);
+    margin-top: 70px;
+}
+
+.aboutProject-title, .aboutSkills-title, .aboutMe-title, .resume-title{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-color: var(--backgroundColor);
+    color: var(--secondColor);
+    font-size: 40px;
+    padding: 5px 0px;
+    font-family: 'VT323', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.line-container {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.line {
+    height: 5px;
+    background-color: var(--thirdColor);
+    width: 75px;
+    
+}
+
+.about-projects .line {
+    width: 100px;
+}
+
+
+.aboutMe-title {
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/svg/wave.svg');
+
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 70px 0;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.project-img {
+    width: 100%;
+    box-shadow: rgba(240, 46, 170) 0px 15px;
+    border-radius: 10px;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 4.5px 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.781);
+    
+}
+
+.project-title {
+    font-weight: 200;
+    color: white;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+/* Skills Section */
+
+.about-skills {
+    background-color: var(--backgroundColor);
+    margin-top: 70px;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    padding: 70px 0;
+    background-color: var(--backgroundColor);
+
+}
+
+.skill-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #31405e41;
+    color: whitesmoke;
+    gap: 10px;
+    padding: 50px;
+    width: 100%;
+    border-radius: 5px;
+    transform: scale(1);
+    box-shadow: rgba(240, 46, 170) 0px 5px
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-img {
+    width: 55px;
+    
+}
+
+.skill-name {
+    font-size: 20px;
+}
+
+/* Avatar Section */
+
+.avatar-img {
+    border-radius: 50%;
+    width: 350px;
+    background-color: var(--thirdColor);
+    cursor: pointer;
+    box-shadow: 0 8px rgb(49, 48, 48);
+}
+
+.avatar-img:active {
+    box-shadow: 0 2px rgb(53, 53, 53);
+    transform: translateY(4px);
+}
+
+.aboutMe-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: var(--backgroundColor);
+}
+
+.ul-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.personal-info-list {
+    list-style-type: none;
+    padding: 0 50px;
+}
+
+.lucas {
+    font-size: 25px;
+    color: var(--yellow);
+}
+
+.push-span {
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.aboutMe-first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0px 30px;
+}
+
+.aboutMe-second {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 30px;
+    border-radius: 50%;
+    padding: 0px 50px;
+}
+
+.pc-img {
+    transform: scaleX(-1);
+    width: 350px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+
+}
+
+.pc-text {
+    width: 100%;
+    text-align: justify;
+    padding: 50px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.home-cv-container {
+    margin-top: 70px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    
+    /* Introduction  */
+
+    .name-title {
+        font-size: 45px;
+    }
+    
+   
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    .arrow-img {
+        width: 30px;
+    }
+    
+    /* Avatar Section */
+
+    .avatar-img {
+        width: 220px;
+    }
+
+    .ul-container {
+        text-align: justify;
+    }
+
+    .personal-info-list {
+        padding: 0 10px;
+    }
+
+    .aboutMe-info {
+        gap: 50px;
+    }
+
+    .aboutMe-first {
+        flex-direction: column;
+        font-size: 22px;
+    }
+
+    .aboutMe-second {
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 50%;
+        padding: 0px 0px;
+    }
+
+    .pc-img {
+        width: 220px;
+    }
+
+    .pc-text {
+        text-align: justify;
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    /* Skills Section */
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 50px;
+        padding: 70px 0;
+        background-color: var(--backgroundColor);
+
+    }
+
+    .skill-card {
+        padding: 30px;
+    }
+
+    .skill-img {
+        width: 50px;
+    }
+
+    /* Project Section */
+
+
+    .project-img {
+        filter: grayscale(0);
+    }
+
+    .about-projects {
+        width: 100%;
+    }
+
+    .project-container {
+        padding: 70px 50px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    /* Introduction  */
+
+    .name-title {
+        font-size: 60px;
+    }
+    
+   
+    .subtitle {
+        font-size: 30px;
+    }
+    
+    .arrow-img {
+        width: 38px;
+    }
+    
+    /* Avatar Section */
+
+    .avatar-img {
+        width: 250px;
+    }
+
+    .ul-container {
+        text-align: justify;
+    }
+
+    .personal-info-list {
+        padding: 0 10px;
+    }
+
+    .aboutMe-info {
+        gap: 50px;
+    }
+
+    .aboutMe-first {
+        flex-direction: column;
+        font-size: 28px;
+    }
+
+    .aboutMe-second {
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 50%;
+        padding: 0px 0px;
+    }
+
+    .pc-img {
+        width: 250px;
+    }
+
+    .pc-text {
+        text-align: justify;
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    /* Skills Section */
+
+    .skill-card {
+        padding: 40px;
+    }
+
+    .skill-img {
+        width: 60px;
+    }
+
+    /* Project Section */
+
+
+    .project-img {
+        filter: grayscale(0);
+    }
+
+    .about-projects {
+        width: 100%;
+    }
+
+    .project-container {
+        padding: 70px 50px;
+        gap: 50px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    /* Introduction  */
+
+    .name-title {
+        font-size: 65px;
+    }
+    
+   
+    .subtitle {
+        font-size: 35px;
+    }
+    
+    .arrow-img {
+        width: 40px;
+    }
+    
+    /* Avatar Section */
+
+    .avatar-img {
+        width: 280px;
+    }
+
+    .ul-container {
+        text-align: justify;
+    }
+
+    .personal-info-list {
+        padding: 0 10px;
+    }
+
+    .aboutMe-info {
+        gap: 100px;
+    }
+
+    .aboutMe-first {
+        flex-direction: column;
+        font-size: 30px;
+    }
+
+    .aboutMe-second {
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 50%;
+        padding: 0px 0px;
+    }
+
+    .pc-img {
+        width: 280px;
+    }
+
+    .pc-text {
+        text-align: justify;
+        padding: 30px 50px;
+        font-size: 28px;
+    }
+
+    /* Skills Section */
+
+    .skill-card {
+        padding: 40px;
+    }
+
+    .skill-img {
+        width: 65px;
+    }
+
+    /* Project Section */
+
+
+    .project-img {
+        filter: grayscale(0);
+    }
+
+    .about-projects {
+        width: 100%;
+    }
+
+    .project-container {
+        padding: 70px 50px;
+        gap: 50px;
+    }
+}
